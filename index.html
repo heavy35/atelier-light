@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru" data-type="product" data-radius="soft" data-buttons="solid" data-motion="quiet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-type" content="product">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#f7f5f1">
+  <meta name="description" content="ATELIER LIGHT — демонстрационный магазин светильников. Коллекция, поиск, корзина и оформление заказа в одном проекте.">
+  <title>ATELIER LIGHT — светильники для дома</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/images/hero.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="demo-strip"><span>Демонстрационный проект для портфолио</span><span>Покупки и оплата не проводятся</span></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="ATELIER LIGHT — на главную">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>ATELIER <strong>LIGHT</strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#catalog">Коллекция</a>
+        <a href="#approach">О свете</a>
+        <a href="#about">О проекте</a>
+      </nav>
+      <div class="header-actions">
+        <a class="mobile-catalog" href="#catalog">Каталог</a>
+        <button class="cart-trigger" type="button" id="open-cart" aria-label="Открыть корзину, товаров: 0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h2l2.2 10.5h11.3L21 8H6"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+          <span>Корзина</span><span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-layout">
+        <div class="hero-copy" data-enter>
+          <div class="hero-rule" aria-hidden="true"></div>
+          <h1 id="hero-title">Светильники для дома, в котором хорошо.</h1>
+          <p>Подвесные, настольные и напольные модели для тех, кто выбирает атмосферу так же внимательно, как мебель.</p>
+          <a class="button button-dark" href="#catalog">Смотреть коллекцию <span aria-hidden="true">↗</span></a>
+          <div class="hero-foot"><span>Предметы, которые меняют пространство</span><span>01 / 03</span></div>
+        </div>
+        <div class="hero-media" data-enter>
+          <img src="assets/images/hero.jpg" alt="Светлая гостиная с подвесной люстрой и настольными лампами" width="1400" height="788" fetchpriority="high">
+          <div class="hero-media-note"><span>Свет задаёт тон.</span><span>ATELIER LIGHT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Идея коллекции">
+      <div class="wrap intro-band-inner">
+        <p>Свет — часть комнаты, даже когда он выключен.</p>
+        <span class="line-flower" aria-hidden="true">✳</span>
+        <p>Выберите форму, которая останется с вами надолго.</p>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 id="catalog-title">Коллекция света</h2>
+            <p>Найдите светильник для своего пространства.</p>
+          </div>
+          <span class="catalog-total" id="catalog-total">8 предметов</span>
+        </div>
+        <div class="catalog-tools">
+          <div class="filters" id="filters" role="group" aria-label="Категории светильников">
+            <button type="button" class="filter active" data-filter="all" aria-pressed="true">Все</button>
+            <button type="button" class="filter" data-filter="table" aria-pressed="false">Настольные</button>
+            <button type="button" class="filter" data-filter="pendant" aria-pressed="false">Подвесные</button>
+            <button type="button" class="filter" data-filter="floor" aria-pressed="false">Напольные</button>
+            <button type="button" class="filter" data-filter="wall" aria-pressed="false">Настенные</button>
+          </div>
+          <div class="catalog-controls">
+            <label class="search-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+              <span class="sr-only">Поиск по коллекции</span>
+              <input id="catalog-search" type="search" placeholder="Поиск" autocomplete="off">
+            </label>
+            <label class="sort-field"><span class="sr-only">Сортировка</span>
+              <select id="catalog-sort">
+                <option value="featured">По умолчанию</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+                <option value="name">По названию</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="empty-results" id="empty-results" hidden>
+          <h3>Ничего не нашли</h3>
+          <p>Попробуйте другое слово или вернитесь ко всей коллекции.</p>
+          <button class="text-button" type="button" id="reset-filters">Показать все</button>
+        </div>
+        <noscript><p>Для просмотра каталога и работы корзины включите JavaScript.</p></noscript>
+      </div>
+    </section>
+
+    <section class="story-section" id="approach" aria-labelledby="story-title">
+      <div class="wrap story-layout">
+        <div class="story-photo">
+          <img src="assets/images/floor-pair.jpg" alt="Два напольных светильника у стены в мягком дневном свете" loading="lazy" width="1400" height="1400">
+        </div>
+        <div class="story-copy">
+          <span class="story-sun" aria-hidden="true"></span>
+          <h2 id="story-title">Свет, в котором хочется остаться.</h2>
+          <p>Один светильник меняет угол комнаты. Несколько источников позволяют менять настроение: ясное утро, рабочий день, тихий вечер.</p>
+          <a class="inline-link" href="#catalog">Выбрать свой свет <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" id="about" aria-labelledby="about-title">
+      <div class="wrap closing-layout">
+        <div>
+          <h2 id="about-title">Хороший свет начинается с выбора.</h2>
+          <p>Этот магазин создан как портфолио-проект. Здесь можно искать товары, изучать карточки и пройти путь заказа без оплаты и отправки данных.</p>
+        </div>
+        <a class="button button-light" href="#catalog">К коллекции <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span>ATELIER <strong>LIGHT</strong></span></a>
+      <div class="footer-links"><a href="#catalog">Коллекция</a><a href="#approach">О свете</a><a href="#about">О проекте</a></div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 ATELIER LIGHT · Демонстрационный проект</span>
+      <span>Фото: <a href="credits.html">Unsplash — источники</a></span>
+    </div>
+  </footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title">
+    <button class="dialog-close" type="button" id="close-product" aria-label="Закрыть карточку товара"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button>
+    <div class="product-dialog-inner" id="product-dialog-content"></div>
+  </dialog>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="drawer-header"><div><span class="drawer-overline">Ваш выбор</span><h2 id="cart-title">Корзина</h2></div><button class="dialog-close" type="button" id="close-cart" aria-label="Закрыть корзину"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer"></div>
+  </dialog>
+
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <button class="dialog-close" type="button" id="close-checkout" aria-label="Закрыть оформление"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button>
+    <div id="checkout-body">
+      <span class="drawer-overline">Последний шаг</span>
+      <h2 id="checkout-title">Оформление заказа</h2>
+      <p class="checkout-note">Это демо: оплата не производится, данные никуда не отправляются.</p>
+      <form id="checkout-form">
+        <label>Имя<input name="name" type="text" autocomplete="name" required minlength="2" placeholder="Как к вам обращаться"></label>
+        <label>Электронная почта<input name="email" type="email" autocomplete="email" required placeholder="example@mail.ru"></label>
+        <label>Город<input name="city" type="text" autocomplete="address-level2" required minlength="2" placeholder="Ваш город"></label>
+        <div class="checkout-summary"><span>Итого</span><strong id="checkout-total"></strong></div>
+        <button class="button button-dark checkout-submit" type="submit">Завершить демозаказ <span aria-hidden="true">↗</span></button>
+      </form>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

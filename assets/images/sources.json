@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "source": "https://unsplash.com/photos/white-and-gold-pendant-lamp-2d1k_A-nrY8",
+    "image": "https://images.unsplash.com/photo-1618221312573-404f9a52798d",
+    "bytes": 186245
+  },
+  "pendant-a": {
+    "source": "https://unsplash.com/photos/several-modern-pendant-lights-hang-indoors--jxCVEm2hrA",
+    "image": "https://images.unsplash.com/photo-1775800169620-7b67622ec3f5",
+    "bytes": 208088
+  },
+  "table-a": {
+    "source": "https://unsplash.com/photos/a-glowing-lamp-sits-next-to-a-vase-and-books--Gem15xQAE4",
+    "image": "https://images.unsplash.com/photo-1753932847231-7949af383b98",
+    "bytes": 79675
+  },
+  "wall-a": {
+    "source": "https://unsplash.com/photos/a-lamp-on-a-table-86q6h3jUPz8",
+    "image": "https://images.unsplash.com/photo-1655151418942-2bf9df1cfdf3",
+    "bytes": 265301
+  },
+  "pendant-b": {
+    "source": "https://unsplash.com/photos/turned-on-pendant-lamp-osSjwCjVMIg",
+    "image": "https://images.unsplash.com/photo-1532579821608-3f220ab206e7",
+    "bytes": 182505
+  },
+  "floor-minimal": {
+    "source": "https://unsplash.com/photos/black-floor-lamp-at-the-corner-3LTht2nxd34",
+    "image": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85",
+    "bytes": 198620
+  },
+  "floor-concrete": {
+    "source": "https://unsplash.com/photos/a-modern-floor-lamp-with-concrete-base-and-glowing-panels-a-kKU06aTyA",
+    "image": "https://images.unsplash.com/photo-1780898406363-a3858597ca6c",
+    "bytes": 185541
+  },
+  "floor-pair": {
+    "source": "https://unsplash.com/photos/two-floor-lamps-cast-shadows-on-a-wall-kQdH0Aal8ts",
+    "image": "https://images.unsplash.com/photo-1778880707611-d1f09e32b4e2",
+    "bytes": 388812
+  },
+  "wall-sconce": {
+    "source": "https://unsplash.com/photos/a-modern-globe-wall-lamp-illuminates-a-rattan-headboard-dJgQkjBa4uc",
+    "image": "https://images.unsplash.com/photo-1774352863706-292917b7ed38",
+    "bytes": 361686
+  }
+}
